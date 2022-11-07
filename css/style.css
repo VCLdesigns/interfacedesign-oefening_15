@@ -1,0 +1,93 @@
+/* © Victor Loots, 2022
+/*
+/* Variabelen */
+:root {
+  --font_titel: "Dorsa", sans-serif;
+  --font_subtitel: "Dorsa", sans-serif;
+  --font-brood: "Roboto", sans-serif;
+  --kleur_wit: #f8f7f3;
+  --kleur_zwart: #303030;
+}
+
+/* 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+/* Standards */
+body {
+  min-height: 100%;
+  color: var(--kleur_zwart);
+  background-color: var(--kleur_wit);
+  font-family: var(--font-brood);
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+#container {
+  margin: 5%;
+}
+section{
+  padding: 5%;
+}
+
+h2 {
+  font-family: var(--font_subtitel);
+  font-size: 2em;
+  color: blue;
+  letter-spacing: 10px;
+  padding: 10%;
+  transform: translate(100px);
+}
+
+h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  border: 2px blue solid;
+  transform: rotate(-30deg) translate(-50px, -40px);
+}
+
+blockquote {
+  color: pink;
+  float: left;
+  width: 40%;
+  margin: 5%;
+  transform: translateY(-30px);
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  #container {
+    width: 80%;
+    margin: 100px auto;
+    max-width: 1200px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  main section:nth-of-type(2) {
+    grid-column-start: 2;
+  }
+
+  main div:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+}
