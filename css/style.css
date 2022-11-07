@@ -40,6 +40,7 @@ h2 {
   font-size: 2em;
   color: blue;
   letter-spacing: 10px;
+  text-transform: uppercase;
   padding: 10%;
   transform: translate(100px);
 }
